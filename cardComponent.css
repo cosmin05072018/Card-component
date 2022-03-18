@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.content .image img{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.content{
+    background-color: red;
+    width: 50%;
+    justify-content: center;
+}
+
+.btnPrice,
+.btnPrice input{
+    text-align: center;
+}

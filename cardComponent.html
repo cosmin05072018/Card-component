@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Component</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="cardComponent.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Buy this item of clothing!</h1>
+    </div>
+    <div class="content">
+      <div class="containerItem">
+        <div class="image"><img src="./cottonbro.jpg" alt="image" /></div>
+        <h2 class="titleProduct">Koton</h2>
+        <div class="btnPrice">
+          <button type="button" class="minusBtn">-</button>
+          <input type="text" id="quantity" value="20" />
+          <button type="button" class="plusBtn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./cardComponent.js"></script>
+  </body>
 </html>
