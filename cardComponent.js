@@ -44,10 +44,44 @@ function visible() {
 
 */
 
+/*asta e varianta cea buna
+
 const minusBtn = document.querySelector(".minusBtn");
 const numberQuantity = document.querySelector(".num");
 const plusBtn = document.querySelector(".plusBtn");
 const priceProduct = document.querySelector(".priceProduct")
+let a = 0;
+
+
+plusBtn.addEventListener("click", () => {
+  a++;
+  numberQuantity.innerText = a;
+  priceProduct.innerText = Number(`${card.price}`) * a;
+  visible();
+});
+
+minusBtn.addEventListener("click", () => {
+  a--;
+  numberQuantity.innerText = a;
+  priceProduct.innerText = (Number(`${card.price}`) * a) - (Number(`${card.price}`) - (Number(`${card.price}`) /1));
+  visible();
+});
+
+function visible() {
+  if (a > 1) {
+    document.querySelector(".minusBtn").style.visibility = "visible";
+  } else if (a <= 1) {
+    document.querySelector(".minusBtn").style.visibility = "hidden";
+  }
+}
+
+*/
+
+const minusBtn = document.querySelector(".minusBtn");
+const numberQuantity = document.querySelector(".num");
+const plusBtn = document.querySelector(".plusBtn");
+const priceProduct = document.querySelector(".price")
+
 let a = 0;
 
 
